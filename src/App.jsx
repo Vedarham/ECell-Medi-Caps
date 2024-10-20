@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/ECell-Medi-Caps/",
+        path: "/",
         element: <Home/>,
       },
       {
