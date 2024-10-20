@@ -15,6 +15,35 @@ import { useEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ESummit from './components/ESummit/ESummit.jsx'
 
+const router = createBrowserRouter([
+  {
+    element: <App/>,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/ECell-Medi-Caps/",
+        element: <Home/>,
+      },
+      {
+        path: "/esummit",
+        element: <ESummit/>,
+      },
+      // {
+      //   path: "/archives",
+      //   element: <Archives />,
+      // },
+      {
+        path: "/ourteam",
+        element: <Team />,
+      },
+      // {
+      //   path: "/contact",
+      //   element: <Contact />,
+      // },
+    ],
+  },
+]);
+
 function App() {
   let tl =gsap.timeline()
   let cursor = useRef(null)
@@ -49,32 +78,4 @@ function App() {
   </div>
 }
 
-const router = createBrowserRouter([
-  {
-    element: <App/>,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/",
-        element: <Home/>,
-      },
-      {
-        path: "/esummit",
-        element: <ESummit/>,
-      },
-      // {
-      //   path: "/archives",
-      //   element: <Archives />,
-      // },
-      {
-        path: "/ourteam",
-        element: <Team />,
-      },
-      // {
-      //   path: "/contact",
-      //   element: <Contact />,
-      // },
-    ],
-  },
-]);
 export default router
