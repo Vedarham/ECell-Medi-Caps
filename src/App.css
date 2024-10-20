@@ -1,0 +1,27 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Monoton&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #000000;
+    font-family: "DM Serif Display", serif;
+}
+.cursor{
+    position: absolute;
+    background: url("./assets/images/thunder.gif");
+    background-size: cover;
+    width: 100px;
+    mix-blend-mode: difference;
+    height: 100px;
+    z-index: 999;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(5px,5px);
+}

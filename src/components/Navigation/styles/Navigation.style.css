@@ -1,0 +1,57 @@
+.Nav{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.navlinks ul{
+    display: flex;
+    align-items: center;
+    gap:25px;
+    list-style: none;
+    color: #50ff73;
+    font-size: 18px;
+}
+.button{
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: 0.4s ease;
+    text-decoration: none;
+    background-color: rgb(80, 255, 115);
+    border: 2px solid white;
+}
+.button:hover{
+    scale: 1.2;
+    background-color: #20742e;
+    border: 2px solid white;
+    color: white;
+    box-shadow: #001f2d 0px 18px 45px -1px;
+}
+.uscore{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap:25px;
+    list-style: none;
+    color: #50ff73;
+    font-size: 18px;
+}
+.uscore-b{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap:25px;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+}
