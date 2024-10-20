@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "/ECell-Medi-Caps/",
         element: <Home/>,
       },
       {
@@ -77,5 +77,6 @@ function App() {
     <div className='cursor' ref={el=>cursor =el}></div>
   </div>
 }
+
 
 export default router
