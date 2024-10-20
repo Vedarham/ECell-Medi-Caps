@@ -17,12 +17,11 @@ import ESummit from './components/ESummit/ESummit.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/ECell-Medi-Caps/",
     element: <App/>,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "/ECell-Medi-Caps/",
         element: <Home/>,
       },
       {
